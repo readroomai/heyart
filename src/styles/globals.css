@@ -163,6 +163,17 @@
   }
 }
 
+/* Clerk: hide the provider branding inside the auth card. `.cl-footerAction`
+   is the "Don't have an account? Sign up" row, which must stay. */
+.cl-footer > *:not(.cl-footerAction) {
+  display: none !important;
+}
+
+.cl-logoBox,
+.cl-internal-piyvrh {
+  display: none !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

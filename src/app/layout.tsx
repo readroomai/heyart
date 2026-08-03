@@ -95,6 +95,22 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const { ClerkProvider } = await import('@clerk/nextjs')
   return (
     <ClerkProvider
+      // The Clerk application is named elsewhere in their dashboard; these
+      // overrides make the card speak as HiArt regardless.
+      localization={{
+        signIn: {
+          start: {
+            title: 'Sign in to HiArt',
+            subtitle: 'Welcome back. Pick up where you left off.',
+          },
+        },
+        signUp: {
+          start: {
+            title: 'Create your HiArt account',
+            subtitle: 'Three visual reviews a day, free during the beta.',
+          },
+        },
+      }}
       appearance={{
         layout: {
           // Hides Clerk's "Development mode" badge on test keys.
