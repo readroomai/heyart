@@ -35,6 +35,10 @@ export const metadata: Metadata = {
     'brand review',
   ],
   authors: [{ name: 'Gia Macool and the HiArt team' }],
+  // Domain ownership verification for the Orynth listing.
+  other: {
+    'ory-verify': 'orynth-0c77cfc049164604af23a13f6b6b0657',
+  },
   icons: {
     icon: [{ url: '/favicon.png', type: 'image/png' }],
     apple: [{ url: '/apple-touch-icon.png' }],
