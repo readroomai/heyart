@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server'
 import { ZodError } from 'zod'
 import { ConfigurationError } from './db'
 import { UnauthorizedError } from './auth'
-import { AiConfigurationError, AiResponseError } from './ai'
+import { AiConfigurationError, AiResponseError, AiUnavailableError } from './ai'
 
 export type ApiError = { error: string; code: string; details?: unknown }
 
@@ -42,6 +42,10 @@ export function errorResponse(error: unknown): NextResponse<ApiError> {
       },
       { status: 503 }
     )
+  }
+
+  if (error instanceof AiUnavailableError) {
+    return NextResponse.json({ error: error.message, code: 'ai_unavailable' }, { status: 503 })
   }
 
   if (error instanceof AiResponseError) {

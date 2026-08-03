@@ -18,6 +18,30 @@ export class AiResponseError extends Error {
   }
 }
 
+/** The provider is up but temporarily refusing work — worth retrying later. */
+export class AiUnavailableError extends Error {
+  constructor(message: string) {
+    super(message)
+    this.name = 'AiUnavailableError'
+  }
+}
+
+/** Recognises provider overload and rate limiting from the SDK's error shape. */
+export function asUnavailable(error: unknown): AiUnavailableError | null {
+  const message = error instanceof Error ? error.message : String(error)
+  if (
+    /\b(503|429)\b/.test(message) ||
+    /UNAVAILABLE|RESOURCE_EXHAUSTED|overloaded|high demand/i.test(message)
+  ) {
+    return new AiUnavailableError(
+      /429|RESOURCE_EXHAUSTED/i.test(message)
+        ? 'The AI provider is rate limiting us right now. Wait a moment and try again — this review was not counted.'
+        : 'The vision model is busy right now. Try again in a moment — this review was not counted.'
+    )
+  }
+  return null
+}
+
 export type ImagePart = { base64: string; mimeType: string }
 
 let cached: GoogleGenAI | null = null
@@ -73,6 +97,32 @@ export function safeParseJson(raw: string): unknown {
   }
 }
 
+type ParseAttempt<T> = { ok: true; data: T } | { ok: false; issues: string }
+
+/**
+ * Parses and validates one reply. Both failure kinds — unreadable JSON and a
+ * shape that misses the schema — come back as feedback the model can act on.
+ */
+function attemptParse<TSchema extends ZodTypeAny>(
+  raw: string,
+  schema: TSchema
+): ParseAttempt<z.infer<TSchema>> {
+  let value: unknown
+  try {
+    value = safeParseJson(raw)
+  } catch {
+    return {
+      ok: false,
+      issues:
+        '- (root): the reply was not valid JSON. It may have been cut off. Return a single complete JSON object and keep every string short.',
+    }
+  }
+
+  const parsed = schema.safeParse(value)
+  if (parsed.success) return { ok: true, data: parsed.data }
+  return { ok: false, issues: describeIssues(parsed.error) }
+}
+
 /** Human-readable summary of Zod issues, fed back to the model on retry. */
 function describeIssues(error: z.ZodError): string {
   return error.issues
@@ -99,12 +149,29 @@ async function callModel(prompt: string, images: ImagePart[], model: string): Pr
     config: {
       responseMimeType: 'application/json',
       temperature: 0.6,
-      maxOutputTokens: 8192,
+      // Reasoning models spend thinking tokens against this same budget, so
+      // it has to comfortably exceed the size of a full report.
+      maxOutputTokens: 16384,
     },
   })
   const text = response.text
   if (!text) throw new AiResponseError('The model returned an empty response.')
   return text
+}
+
+/** Wraps a call so provider overload surfaces as a retryable, honest error. */
+async function callModelSafely(
+  prompt: string,
+  images: ImagePart[],
+  model: string
+): Promise<string> {
+  try {
+    return await callModel(prompt, images, model)
+  } catch (error) {
+    const unavailable = asUnavailable(error)
+    if (unavailable) throw unavailable
+    throw error
+  }
 }
 
 /**
@@ -127,14 +194,20 @@ export async function generateReport<TSchema extends ZodTypeAny>(params: {
     return { data, model: `${model} (mocked)` }
   }
 
-  const first = await callModel(params.prompt, params.images, model)
-  const firstParsed = params.schema.safeParse(safeParseJson(first))
-  if (firstParsed.success) return { data: firstParsed.data, model }
+  // A truncated or fenced reply must reach the corrective retry too, not just
+  // one that parsed cleanly and then failed the schema.
+  const first = attemptParse(
+    await callModelSafely(params.prompt, params.images, model),
+    params.schema
+  )
+  if (first.ok) return { data: first.data, model }
 
-  const correction = buildCorrectionPrompt(params.prompt, describeIssues(firstParsed.error))
-  const second = await callModel(correction, params.images, model)
-  const secondParsed = params.schema.safeParse(safeParseJson(second))
-  if (secondParsed.success) return { data: secondParsed.data, model }
+  const correction = buildCorrectionPrompt(params.prompt, first.issues)
+  const second = attemptParse(
+    await callModelSafely(correction, params.images, model),
+    params.schema
+  )
+  if (second.ok) return { data: second.data, model }
 
   throw new AiResponseError(
     'The review came back in an unexpected shape. Nothing was saved — please try again.'
