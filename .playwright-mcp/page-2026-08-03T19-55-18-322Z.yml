@@ -1,0 +1,456 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - link "HiArt home" [ref=f1e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e6]:
+          - img "HiArt" [ref=f1e7]
+          - generic [ref=f1e13]: hiart
+      - navigation "Primary" [ref=f1e14]:
+        - link "Product" [ref=f1e15] [cursor=pointer]:
+          - /url: /#product
+        - link "How it works" [ref=f1e16] [cursor=pointer]:
+          - /url: /#how-it-works
+        - link "Examples" [ref=f1e17] [cursor=pointer]:
+          - /url: /#examples
+        - link "About" [ref=f1e18] [cursor=pointer]:
+          - /url: /#about
+      - generic [ref=f1e19]:
+        - link "Sign in" [ref=f1e20] [cursor=pointer]:
+          - /url: /sign-in
+        - link "Review a visual" [ref=f1e21] [cursor=pointer]:
+          - /url: /app/new
+  - main [ref=f1e22]:
+    - generic [ref=f1e24]:
+      - generic [ref=f1e25]:
+        - generic [ref=f1e26]:
+          - paragraph [ref=f1e27]: AI visual intelligence
+          - heading [level=1] [ref=f1e28]:
+            - text: Before they read the caption,
+            - emphasis [ref=f1e29]: they see the creative.
+          - paragraph [ref=f1e30]: Upload a post, thumbnail, advertisement, profile or landing page. HiArt shows what people notice first, how the visual may be perceived, and exactly what to improve.
+          - generic [ref=f1e31]:
+            - link "Review a visual" [ref=f1e32] [cursor=pointer]:
+              - /url: /app/new
+            - link "See an example" [ref=f1e35] [cursor=pointer]:
+              - /url: /example
+          - paragraph [ref=f1e36]: Private by default. Nothing is published on your behalf.
+        - generic [ref=f1e38]:
+          - generic [ref=f1e39]:
+            - term [ref=f1e40]: Three modes
+            - definition [ref=f1e41]: Visual Review, A/B Compare, Feed Audit.
+          - generic [ref=f1e42]:
+            - term [ref=f1e43]: Nine dimensions
+            - definition [ref=f1e44]: Attention, clarity, hierarchy, trust and more.
+          - generic [ref=f1e45]:
+            - term [ref=f1e46]: One revision brief
+            - definition [ref=f1e47]: A prompt you can hand straight to a designer.
+      - generic [ref=f1e49]:
+        - generic [ref=f1e50]:
+          - paragraph [ref=f1e53]: Visual Review · Sample
+          - paragraph [ref=f1e54]: Instagram · Premium · Launch a product
+        - generic [ref=f1e55]:
+          - generic [ref=f1e56]:
+            - generic [ref=f1e57]:
+              - 'img "Sample coffee launch graphic, variant A: product to the right with a serif headline on the left." [ref=f1e58]':
+                - generic [ref=f1e60]:
+                  - paragraph [ref=f1e61]: Northbound
+                  - paragraph [ref=f1e62]: Coffee Roasters
+                  - paragraph [ref=f1e63]: Small batch, slow roasted, north coast water.
+                - generic [ref=f1e65]:
+                  - paragraph [ref=f1e67]: NB
+                  - paragraph [ref=f1e68]: Roast 04
+                - generic [ref=f1e69]:
+                  - generic [ref=f1e70]: Ethiopia
+                  - generic [ref=f1e71]: Washed
+                  - generic [ref=f1e72]: 250g
+              - generic [ref=f1e73]: "1"
+              - generic [ref=f1e74]: "2"
+              - generic [ref=f1e75]: "3"
+              - generic [ref=f1e76]: Sample visual
+            - list [ref=f1e77]:
+              - listitem [ref=f1e78]:
+                - generic [ref=f1e79]: "1"
+                - generic [ref=f1e80]: The coffee bag in the centre-right third
+              - listitem [ref=f1e81]:
+                - generic [ref=f1e82]: "2"
+                - generic [ref=f1e83]: The headline set in the upper left
+              - listitem [ref=f1e84]:
+                - generic [ref=f1e85]: "3"
+                - generic [ref=f1e86]: The small roast details along the lower edge
+          - generic [ref=f1e87]:
+            - generic [ref=f1e88]:
+              - generic [ref=f1e89]:
+                - paragraph [ref=f1e90]: First impression
+                - paragraph [ref=f1e91]: A confident product photograph that looks premium, but takes a moment to explain what is actually being announced.
+              - generic [ref=f1e92]:
+                - paragraph [ref=f1e93]: "71"
+                - paragraph [ref=f1e94]: Strong
+            - generic [ref=f1e95]:
+              - generic [ref=f1e96]:
+                - paragraph [ref=f1e97]: clarity
+                - paragraph [ref=f1e98]: "62"
+              - generic [ref=f1e101]:
+                - paragraph [ref=f1e102]: trust
+                - paragraph [ref=f1e103]: "82"
+              - generic [ref=f1e106]:
+                - paragraph [ref=f1e107]: Platform
+                - paragraph [ref=f1e108]: "63"
+            - generic [ref=f1e111]:
+              - paragraph [ref=f1e112]: Priority improvement 01
+              - paragraph [ref=f1e113]: State the announcement in the upper third.
+              - paragraph [ref=f1e114]: The goal is a launch, but nothing currently signals that anything is new.
+            - generic [ref=f1e115]:
+              - paragraph [ref=f1e116]: Revision prompt
+              - paragraph [ref=f1e117]: Rebuild this coffee launch graphic at 1080×1350. Keep the existing product photography, lighting and warm neutral palette. Add a short announcement line in the upper third above the headline, at roughly one third of the headline size, reading as a launch rather than a restock. Move the roast detail block from the lower edge to a left-aligned two-line block beside the product, using the brand’s deepest brown for at least 4.5:1 contrast. Recalculate margins for the new ratio rather than scaling them. Introduce one deliberate break from category convention — either a much tighter crop or letting the product break the frame edge — while keeping the calm, premium tone.
+              - generic [ref=f1e118]: Ready to paste
+    - generic [ref=f1e123]:
+      - generic [ref=f1e124]:
+        - paragraph [ref=f1e125]: The problem
+        - heading [level=2] [ref=f1e126]:
+          - text: What people see first
+          - emphasis [ref=f1e127]: changes what they understand.
+      - generic [ref=f1e128]:
+        - paragraph [ref=f1e129]: A viewer forms an impression of your work long before they read a word of it. Colour, crop, hierarchy and craft do that work — and they do it whether or not you intended them to.
+        - paragraph [ref=f1e130]: "You cannot see your own visual for the first time twice. HiArt gives you that first look back: what the eye lands on, in what order, and what conclusion a stranger draws from it."
+        - generic [ref=f1e131]:
+          - generic [ref=f1e132]:
+            - heading "Order" [level=3] [ref=f1e133]
+            - paragraph [ref=f1e134]: The eye moves in a sequence. That sequence is the argument your visual makes.
+          - generic [ref=f1e135]:
+            - heading "Read" [level=3] [ref=f1e136]
+            - paragraph [ref=f1e137]: Different audiences reach different conclusions from the same frame.
+          - generic [ref=f1e138]:
+            - heading "Cost" [level=3] [ref=f1e139]
+            - paragraph [ref=f1e140]: Every fix trades something away. HiArt names the trade.
+    - generic [ref=f1e142]:
+      - generic [ref=f1e143]:
+        - paragraph [ref=f1e144]: How it works
+        - heading [level=2] [ref=f1e145]:
+          - text: Three steps, about
+          - emphasis [ref=f1e146]: ninety seconds.
+      - list [ref=f1e147]:
+        - listitem [ref=f1e148]:
+          - text: "01"
+          - heading "Upload the visual" [level=3] [ref=f1e149]
+          - paragraph [ref=f1e150]: A post, thumbnail, advertisement, slide, logo, screenshot or profile. PNG, JPEG or WebP, up to 8 MB.
+        - listitem [ref=f1e151]:
+          - text: "02"
+          - heading "Set the brief" [level=3] [ref=f1e152]
+          - paragraph [ref=f1e153]: Where it will be published, who it is for, what you want it to do, and how it should feel.
+        - listitem [ref=f1e154]:
+          - text: "03"
+          - heading "Read the review" [level=3] [ref=f1e155]
+          - paragraph [ref=f1e156]: "A structured report: attention path, nine scored dimensions, five prioritised fixes and a revision prompt."
+    - generic [ref=f1e159]:
+      - generic [ref=f1e160]:
+        - paragraph [ref=f1e161]: Mode one · Visual Review
+        - heading [level=2] [ref=f1e162]:
+          - text: One visual, read the way
+          - emphasis [ref=f1e163]: an audience reads it.
+        - paragraph [ref=f1e164]: Nine scored dimensions, an attention path, the interpretations different audiences are likely to reach, and five prioritised changes ordered by impact.
+        - link "Open the full example" [ref=f1e165] [cursor=pointer]:
+          - /url: /example
+      - generic [ref=f1e169]:
+        - figure [ref=f1e171]:
+          - generic [ref=f1e172]: "71"
+          - generic [ref=f1e178]:
+            - paragraph [ref=f1e179]: Visual Score
+            - paragraph [ref=f1e180]: Strong
+            - paragraph [ref=f1e181]: out of 100
+        - generic [ref=f1e182]:
+          - paragraph [ref=f1e183]: First impression
+          - paragraph [ref=f1e184]: A confident product photograph that looks premium, but takes a moment to explain what is actually being announced.
+        - generic [ref=f1e185]:
+          - generic [ref=f1e186]:
+            - generic [ref=f1e187]:
+              - heading "Attention" [level=4] [ref=f1e188]
+              - generic [ref=f1e189]:
+                - generic [ref=f1e190]: Workable
+                - generic [ref=f1e191]: "68"
+            - 'meter "Attention: 68 out of 100, Workable" [ref=f1e192]'
+            - paragraph [ref=f1e194]: The composition is calm. It holds up when looked at, but it does not interrupt a scroll.
+          - generic [ref=f1e195]:
+            - generic [ref=f1e196]:
+              - heading "Clarity" [level=4] [ref=f1e197]
+              - generic [ref=f1e198]:
+                - generic [ref=f1e199]: Workable
+                - generic [ref=f1e200]: "62"
+            - 'meter "Clarity: 62 out of 100, Workable" [ref=f1e201]'
+            - paragraph [ref=f1e203]: The product is obvious; the announcement is not. Nothing states what has changed.
+          - generic [ref=f1e204]:
+            - generic [ref=f1e205]:
+              - heading "Visual hierarchy" [level=4] [ref=f1e206]
+              - generic [ref=f1e207]:
+                - generic [ref=f1e208]: Strong
+                - generic [ref=f1e209]: "74"
+            - 'meter "Visual hierarchy: 74 out of 100, Strong" [ref=f1e210]'
+            - paragraph [ref=f1e212]: Three clear tiers, though the headline and the product compete slightly for first place.
+          - generic [ref=f1e213]:
+            - generic [ref=f1e214]:
+              - heading "Trust" [level=4] [ref=f1e215]
+              - generic [ref=f1e216]:
+                - generic [ref=f1e217]: Strong
+                - generic [ref=f1e218]: "82"
+            - 'meter "Trust: 82 out of 100, Strong" [ref=f1e219]'
+            - paragraph [ref=f1e221]: Consistent lighting, honest product photography and no exaggerated claims.
+    - generic [ref=f1e223]:
+      - generic [ref=f1e224]:
+        - paragraph [ref=f1e225]: Mode two · A/B Compare
+        - heading [level=2] [ref=f1e226]:
+          - text: Two variants.
+          - emphasis [ref=f1e227]: One clear recommendation.
+        - paragraph [ref=f1e228]: Stop choosing by committee. HiArt judges both against the goal you set — and names what you lose by picking the winner.
+      - generic [ref=f1e229]:
+        - figure [ref=f1e230]:
+          - generic [ref=f1e231]: Variant A
+          - 'img "Sample coffee launch graphic, variant A: product to the right with a serif headline on the left." [ref=f1e234]':
+            - generic [ref=f1e236]:
+              - paragraph [ref=f1e237]: Northbound
+              - paragraph [ref=f1e238]: Coffee Roasters
+              - paragraph [ref=f1e239]: Small batch, slow roasted, north coast water.
+            - generic [ref=f1e241]:
+              - paragraph [ref=f1e243]: NB
+              - paragraph [ref=f1e244]: Roast 04
+            - generic [ref=f1e245]:
+              - generic [ref=f1e246]: Ethiopia
+              - generic [ref=f1e247]: Washed
+              - generic [ref=f1e248]: 250g
+          - generic [ref=f1e249]:
+            - paragraph [ref=f1e250]: Variant A — atmospheric
+            - paragraph [ref=f1e251]: "66"
+        - figure [ref=f1e252]:
+          - generic [ref=f1e253]:
+            - generic [ref=f1e254]: Variant B
+            - generic [ref=f1e255]: Recommended
+          - 'img "Sample coffee launch graphic, variant B: product centred with a large announcement line." [ref=f1e257]':
+            - generic [ref=f1e259]:
+              - paragraph [ref=f1e260]: New single origin
+              - paragraph [ref=f1e261]: Northbound
+              - paragraph [ref=f1e262]: Coffee Roasters
+            - generic [ref=f1e264]:
+              - paragraph [ref=f1e266]: NB
+              - paragraph [ref=f1e267]: Roast 04
+            - generic [ref=f1e268]:
+              - generic [ref=f1e269]: Ethiopia
+              - generic [ref=f1e270]: Washed
+              - generic [ref=f1e271]: 250g
+          - generic [ref=f1e272]:
+            - paragraph [ref=f1e273]: Variant B — direct
+            - paragraph [ref=f1e274]: "78"
+        - generic [ref=f1e275]:
+          - generic [ref=f1e276]:
+            - paragraph [ref=f1e277]: Verdict
+            - paragraph [ref=f1e278]: Variant B communicates the offer faster, at the cost of some of the atmosphere that made Variant A distinctive.
+          - generic [ref=f1e279]:
+            - generic [ref=f1e280]:
+              - generic [ref=f1e281]: Communicates the stated goal
+              - generic [ref=f1e282]: B
+            - generic [ref=f1e283]:
+              - generic [ref=f1e284]: Visual hierarchy
+              - generic [ref=f1e285]: B
+            - generic [ref=f1e286]:
+              - generic [ref=f1e287]: Clarity
+              - generic [ref=f1e288]: B
+            - generic [ref=f1e289]:
+              - generic [ref=f1e290]: Trust
+              - generic [ref=f1e291]: Tie
+            - generic [ref=f1e292]:
+              - generic [ref=f1e293]: Platform fit
+              - generic [ref=f1e294]: B
+          - generic [ref=f1e295]:
+            - paragraph [ref=f1e296]: The trade-off
+            - paragraph [ref=f1e297]: Choosing B trades a distinctive mood for immediate comprehension. The page will convert its intent more clearly and look more like its competitors.
+    - generic [ref=f1e300]:
+      - generic [ref=f1e302]:
+        - img "Sample profile screenshot showing a nine-tile feed with mixed visual styles." [ref=f1e303]
+        - generic [ref=f1e335]: "1"
+        - generic [ref=f1e336]: "2"
+        - generic [ref=f1e337]: Sample screenshot
+      - generic [ref=f1e338]:
+        - paragraph [ref=f1e339]: Mode three · Feed Audit
+        - heading [level=2] [ref=f1e340]:
+          - text: Your profile is one image,
+          - emphasis [ref=f1e341]: not nine.
+        - paragraph [ref=f1e342]: Upload a screenshot of a profile, feed, gallery or portfolio. HiArt reads it as a single body of work — what it says, what stays unclear, and where it contradicts itself.
+        - generic [ref=f1e343]:
+          - generic [ref=f1e344]:
+            - generic [ref=f1e345]: Appears to be about
+            - generic [ref=f1e346]: Brand identity work, with occasional interior and product photography.
+          - generic [ref=f1e347]:
+            - generic [ref=f1e348]: Unclear
+            - generic [ref=f1e349]: Whether the studio takes on clients or only shows finished work.
+          - generic [ref=f1e350]:
+            - generic [ref=f1e351]: Unclear
+            - generic [ref=f1e352]: Which discipline is the core offer.
+        - paragraph [ref=f1e353]: Plus three visual directions and a seven-item checklist. HiArt never connects to a social platform — you upload your own screenshot.
+    - generic [ref=f1e356]:
+      - generic [ref=f1e357]:
+        - paragraph [ref=f1e358]: A shared idea
+        - heading [level=2] [ref=f1e359]:
+          - text: Words have ReadRoom.
+          - emphasis [ref=f1e360]: Visuals have HiArt.
+      - generic [ref=f1e361]:
+        - paragraph [ref=f1e362]: "ReadRoom helps people understand how written content may land. HiArt does the same for visual work. Two separate products, one belief: you deserve to know how something will be received before you publish it, not after."
+        - generic [ref=f1e363]:
+          - img "HiArt" [ref=f1e364]
+          - paragraph [ref=f1e370]: Independent tools. Related philosophy. Use either on its own.
+    - generic [ref=f1e373]:
+      - generic [ref=f1e374]:
+        - paragraph [ref=f1e375]: Brand Profiles
+        - heading [level=2] [ref=f1e376]:
+          - text: Teach it your brand
+          - emphasis [ref=f1e377]: once.
+        - paragraph [ref=f1e378]: Save your audience, personality, colours and the words your brand should never be described as. Attach a profile to any review and brand fit is judged against your actual identity — not a generic idea of good design.
+        - paragraph [ref=f1e379]: Up to three profiles during the free beta.
+      - generic [ref=f1e380]:
+        - generic [ref=f1e381]:
+          - generic [ref=f1e382]:
+            - paragraph [ref=f1e383]: Brand Profile
+            - paragraph [ref=f1e384]: Northbound Coffee
+          - generic [ref=f1e385]: Default
+        - generic [ref=f1e386]:
+          - generic [ref=f1e387]:
+            - term [ref=f1e388]: Audience
+            - definition [ref=f1e389]: Speciality coffee buyers
+          - generic [ref=f1e390]:
+            - term [ref=f1e391]: Personality
+            - definition [ref=f1e392]: Warm, considered, unhurried
+          - generic [ref=f1e393]:
+            - term [ref=f1e394]: Should feel
+            - definition [ref=f1e395]: Crafted · Honest · Premium
+          - generic [ref=f1e396]:
+            - term [ref=f1e397]: Never
+            - definition [ref=f1e398]: Corporate · Shouty · Cheap
+        - generic [ref=f1e399]:
+          - paragraph [ref=f1e400]: Palette
+          - generic [ref=f1e401]:
+            - paragraph [ref=f1e404]: "#3A2B20"
+            - paragraph [ref=f1e407]: "#8A6244"
+            - paragraph [ref=f1e410]: "#E9E2D6"
+            - paragraph [ref=f1e413]: "#F26445"
+    - generic [ref=f1e415]:
+      - generic [ref=f1e416]:
+        - generic [ref=f1e417]:
+          - paragraph [ref=f1e418]: An example report
+          - heading [level=2] [ref=f1e419]:
+            - text: Not a wall of text.
+            - emphasis [ref=f1e420]: A creative review.
+        - link "Read the full report" [ref=f1e421] [cursor=pointer]:
+          - /url: /example
+      - generic [ref=f1e424]:
+        - generic [ref=f1e425]:
+          - paragraph [ref=f1e426]: What works
+          - list [ref=f1e427]:
+            - listitem [ref=f1e428]: The lighting gives the packaging real material presence.
+            - listitem [ref=f1e430]: A restrained palette keeps attention on the product.
+            - listitem [ref=f1e432]: Generous margins make the composition feel deliberate rather than filled.
+        - generic [ref=f1e434]:
+          - paragraph [ref=f1e435]: What weakens it
+          - list [ref=f1e436]:
+            - listitem [ref=f1e437]: The announcement itself is never stated at a legible size.
+            - listitem [ref=f1e439]: The lower third carries information that a feed crop will remove.
+            - listitem [ref=f1e441]: Roast details fall below comfortable contrast.
+        - generic [ref=f1e443]:
+          - paragraph [ref=f1e444]: Leave alone
+          - list [ref=f1e445]:
+            - listitem [ref=f1e446]: The lighting setup and the material rendering of the packaging.
+            - listitem [ref=f1e448]: The restrained palette.
+            - listitem [ref=f1e450]: The generous margin system.
+      - generic [ref=f1e452]:
+        - paragraph [ref=f1e453]: Revision brief
+        - paragraph [ref=f1e454]: Keep the photography and the restraint — they are doing the premium work well. The problem is that the post does not announce anything. Add a short "new" line in the upper third, rebuild at 4:5 so the lower band is not lost to the feed crop, and darken the small type to a readable contrast. Then make one non-default compositional choice so the piece is not interchangeable with every other roaster in the category.
+    - generic [ref=f1e457]:
+      - generic [ref=f1e458]:
+        - paragraph [ref=f1e459]: Honest terms
+        - heading [level=2] [ref=f1e460]:
+          - text: What HiArt
+          - emphasis [ref=f1e461]: cannot
+          - text: tell you.
+      - generic [ref=f1e462]:
+        - generic [ref=f1e463]:
+          - generic [ref=f1e464]:
+            - heading "It is an opinion, not a measurement" [level=3] [ref=f1e465]
+            - paragraph [ref=f1e466]: HiArt models how a visual may be perceived. It cannot predict engagement, conversion or reach, and it will never claim to.
+          - generic [ref=f1e467]:
+            - heading "It does not judge people" [level=3] [ref=f1e468]
+            - paragraph [ref=f1e469]: When a person appears, HiArt comments on framing, lighting, styling and composition. It never identifies anyone or rates appearance.
+          - generic [ref=f1e470]:
+            - heading "Your uploads stay private" [level=3] [ref=f1e471]
+            - paragraph [ref=f1e472]: Images go to private storage and analyses are private by default. Sharing is an explicit action, and every share link can be revoked.
+          - generic [ref=f1e473]:
+            - heading "An external model reads your image" [level=3] [ref=f1e474]
+            - paragraph [ref=f1e475]: Your visual is processed by an external AI provider to generate the review. During the free beta, avoid uploading confidential material.
+        - generic [ref=f1e476]:
+          - link "Read the full AI limitations" [ref=f1e477] [cursor=pointer]:
+            - /url: /ai-limitations
+          - link "Privacy policy" [ref=f1e478] [cursor=pointer]:
+            - /url: /privacy
+    - generic [ref=f1e481]:
+      - paragraph [ref=f1e482]: From the founder
+      - blockquote [ref=f1e483]:
+        - paragraph [ref=f1e484]: “My team and I created HiArt because people often judge a visual before they read a single word. We wanted to give creators and brands a useful second opinion before their work goes public.”
+        - generic [ref=f1e487]:
+          - paragraph [ref=f1e488]: Gia Macool
+          - paragraph [ref=f1e489]: Founder, HiArt
+    - generic [ref=f1e492]:
+      - paragraph [ref=f1e493]: Free beta · three reviews a day
+      - heading [level=2] [ref=f1e494]:
+        - text: Know how your visuals land
+        - emphasis [ref=f1e495]: before you publish them.
+      - generic [ref=f1e496]:
+        - link "Review a visual" [ref=f1e497] [cursor=pointer]:
+          - /url: /app/new
+        - link "See an example first" [ref=f1e500] [cursor=pointer]:
+          - /url: /example
+      - paragraph [ref=f1e501]: No card required. Nothing is published on your behalf.
+  - contentinfo [ref=f1e502]:
+    - generic [ref=f1e503]:
+      - generic [ref=f1e504]:
+        - generic [ref=f1e505]:
+          - generic [ref=f1e506]:
+            - img "HiArt" [ref=f1e507]
+            - generic [ref=f1e513]: hiart
+          - paragraph [ref=f1e514]: AI visual perception and creative intelligence. A second opinion on your work before it goes public.
+          - paragraph [ref=f1e515]: Made by Gia Macool and the HiArt team.
+        - generic [ref=f1e516]:
+          - heading "Product" [level=2] [ref=f1e517]
+          - list [ref=f1e518]:
+            - listitem [ref=f1e519]:
+              - link "What it does" [ref=f1e520] [cursor=pointer]:
+                - /url: /#product
+            - listitem [ref=f1e521]:
+              - link "How it works" [ref=f1e522] [cursor=pointer]:
+                - /url: /#how-it-works
+            - listitem [ref=f1e523]:
+              - link "Example report" [ref=f1e524] [cursor=pointer]:
+                - /url: /example
+            - listitem [ref=f1e525]:
+              - link "Review a visual" [ref=f1e526] [cursor=pointer]:
+                - /url: /app/new
+        - generic [ref=f1e527]:
+          - heading "Company" [level=2] [ref=f1e528]
+          - list [ref=f1e529]:
+            - listitem [ref=f1e530]:
+              - link "About" [ref=f1e531] [cursor=pointer]:
+                - /url: /#about
+            - listitem [ref=f1e532]:
+              - link "AI limitations" [ref=f1e533] [cursor=pointer]:
+                - /url: /ai-limitations
+            - listitem [ref=f1e534]:
+              - link "hiart.eu" [ref=f1e535] [cursor=pointer]:
+                - /url: https://hiart.eu
+        - generic [ref=f1e536]:
+          - heading "Legal" [level=2] [ref=f1e537]
+          - list [ref=f1e538]:
+            - listitem [ref=f1e539]:
+              - link "Privacy" [ref=f1e540] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f1e541]:
+              - link "Terms" [ref=f1e542] [cursor=pointer]:
+                - /url: /terms
+      - generic [ref=f1e543]:
+        - paragraph [ref=f1e544]: © 2026 HiArt. Free beta.
+        - paragraph [ref=f1e545]: HiArt gives an AI-assisted assessment, not a guarantee of how any audience will behave.

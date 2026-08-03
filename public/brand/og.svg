@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#F6F2EA"/>
+  <g stroke="rgba(17,17,17,0.07)" stroke-width="1">
+    <line x1="0" y1="0" x2="0" y2="630"/><line x1="100" y1="0" x2="100" y2="630"/><line x1="200" y1="0" x2="200" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="400" y1="0" x2="400" y2="630"/><line x1="500" y1="0" x2="500" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="700" y1="0" x2="700" y2="630"/><line x1="800" y1="0" x2="800" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1000" y1="0" x2="1000" y2="630"/><line x1="1100" y1="0" x2="1100" y2="630"/><line x1="1200" y1="0" x2="1200" y2="630"/>
+    <line x1="0" y1="0" x2="1200" y2="0"/><line x1="0" y1="100" x2="1200" y2="100"/><line x1="0" y1="200" x2="1200" y2="200"/><line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="400" x2="1200" y2="400"/><line x1="0" y1="500" x2="1200" y2="500"/><line x1="0" y1="600" x2="1200" y2="600"/>
+  </g>
+  <g transform="translate(80 70) scale(1.5)">
+    <path d="M3.25 8.5V3.25H8.5" stroke="#111111" stroke-width="1.7" fill="none" stroke-linecap="square"/>
+    <path d="M20.75 15.5V20.75H15.5" stroke="#111111" stroke-width="1.7" fill="none" stroke-linecap="square"/>
+    <path d="M15.5 3.25h5.25V8.5" stroke="#111111" stroke-width="1.7" fill="none" opacity="0.28"/>
+    <path d="M8.5 20.75H3.25V15.5" stroke="#111111" stroke-width="1.7" fill="none" opacity="0.28"/>
+    <circle cx="12" cy="12" r="2.6" fill="#111111"/>
+  </g>
+  <text x="128" y="98" font-family="Geist, Helvetica, Arial, sans-serif" font-size="27"
+    font-weight="500" letter-spacing="-0.5" fill="#111111">hiart</text>
+
+  <text x="80" y="286" font-family="Georgia, serif" font-size="86" fill="#111111">Know how your</text>
+  <text x="80" y="382" font-family="Georgia, serif" font-size="86" font-style="italic" fill="#111111">visuals land.</text>
+
+  <line x1="80" y1="438" x2="1120" y2="438" stroke="rgba(17,17,17,0.16)" stroke-width="1"/>
+
+  <text x="80" y="492" font-family="Geist, Helvetica, Arial, sans-serif" font-size="25" fill="#68645F">
+    Upload any visual and discover what people notice, feel, trust,
+  </text>
+  <text x="80" y="530" font-family="Geist, Helvetica, Arial, sans-serif" font-size="25" fill="#68645F">
+    misunderstand and remember — before you publish it.
+  </text>
+
+  <circle cx="1064" cy="292" r="7" fill="#F26445"/>
+  <text x="1000" y="530" font-family="Geist, Helvetica, Arial, sans-serif" font-size="19"
+    letter-spacing="2" fill="#68645F">hiart.eu</text>
+</svg>
